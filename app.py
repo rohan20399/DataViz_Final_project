@@ -15,11 +15,11 @@ with open(geojson_file, 'r') as file:
 
 # Map numeric BOROUGH codes to borough names
 borough_mapping = {
-    1: "Brooklyn",
-    2: "Queens",
-    3: "Bronx",
-    4: "Staten Island",
-    5: "Manhattan"
+    1: "Manhattan",
+    2: "Bronx",
+    3: "Brooklyn",
+    4: "Queens",
+    5: "Staten Island"
 }
 points_of_interest['BOROUGH'] = points_of_interest['BOROUGH'].map(borough_mapping)
 
